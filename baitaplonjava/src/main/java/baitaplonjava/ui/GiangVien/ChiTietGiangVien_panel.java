@@ -33,7 +33,7 @@ public class ChiTietGiangVien_panel extends JPanel {
 		this.setSize(1400, 800);
 
 		model = new DefaultTableModel(new Object[][] {},
-				new String[] { "STT", "Id khóa học", "Tên khóa học", "Học phí" }) {
+				new String[] { "STT", "Id khÃ³a há»�c", "TÃªn khÃ³a há»�c", "Há»�c phÃ­" }) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
@@ -55,11 +55,11 @@ public class ChiTietGiangVien_panel extends JPanel {
 		add(textField);
 		textField.setColumns(10);
 
-		JLabel lblTnGingVin = new JLabel("Tên giảng viên");
+		JLabel lblTnGingVin = new JLabel("TÃªn giáº£ng viÃªn");
 		lblTnGingVin.setBounds(506, 129, 91, 40);
 		add(lblTnGingVin);
 
-		JLabel lblSinThoi = new JLabel("Số điện thoại");
+		JLabel lblSinThoi = new JLabel("Sá»‘ Ä‘iá»‡n thoáº¡i");
 		lblSinThoi.setBounds(522, 205, 75, 40);
 		add(lblSinThoi);
 
@@ -68,12 +68,12 @@ public class ChiTietGiangVien_panel extends JPanel {
 		add(textField_1);
 		textField_1.setColumns(10);
 
-		JLabel lblCcLpang = new JLabel("CÁC LỚP ĐANG DẠY", JLabel.CENTER);
+		JLabel lblCcLpang = new JLabel("CÃ�C Lá»šP Ä�ANG Dáº Y", JLabel.CENTER);
 		lblCcLpang.setFont(new Font("Arial", Font.BOLD, 18));
 		lblCcLpang.setBounds(506, 279, 374, 59);
 		add(lblCcLpang);
 
-		JLabel lblMGingVin = new JLabel("Mã giảng viên");
+		JLabel lblMGingVin = new JLabel("MÃ£ giáº£ng viÃªn");
 		lblMGingVin.setBounds(506, 55, 91, 40);
 		add(lblMGingVin);
 
@@ -82,11 +82,10 @@ public class ChiTietGiangVien_panel extends JPanel {
 		add(textField_2);
 		textField_2.setColumns(10);
 
-		JButton btnQuayLi = new JButton("Quay lại");
+		JButton btnQuayLi = new JButton("Quay láº¡i");
 		btnQuayLi.setBounds(46, 55, 110, 40);
 		btnQuayLi.addActionListener(new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				parrent.chiTietGiangVien_panel.setVisible(false);
 				parrent.quanLyGiangVien_Panel.setVisible(true);

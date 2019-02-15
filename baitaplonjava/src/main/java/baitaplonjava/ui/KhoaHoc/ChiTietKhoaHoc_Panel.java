@@ -191,6 +191,7 @@ public class ChiTietKhoaHoc_Panel extends JPanel {
 		for (HocVien hv : hocviens) {
 			model.addRow(new Object[] { stt, hv.getHocvienMa(), hv.getHocvienTen(), hv.getHocvienTuoi(),
 					hv.getHocvienSdt() });
+			stt += 1;
 		}
 	}
 

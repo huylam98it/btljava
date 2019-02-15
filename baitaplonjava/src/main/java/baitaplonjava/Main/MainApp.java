@@ -3,11 +3,10 @@ package baitaplonjava.Main;
 import java.awt.EventQueue;
 
 import javax.swing.UIManager;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
 
 import baitaplonjava.config.JpaConfig;
 import baitaplonjava.dao.GiangVienDao;
@@ -37,7 +36,7 @@ public class MainApp {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					UIManager.setLookAndFeel(new WindowsLookAndFeel());
+					UIManager.setLookAndFeel(new NimbusLookAndFeel());
 					Main_Frame frame = new Main_Frame();
 					frame.setVisible(true);
 				} catch (Exception e) {

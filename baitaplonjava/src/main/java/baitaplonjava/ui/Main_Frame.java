@@ -15,9 +15,9 @@ public class Main_Frame extends JFrame {
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
-				int result = JOptionPane.showOptionDialog(null, "ban co muon thoat khong", "xac nhan dong cua so",
+				int result = JOptionPane.showOptionDialog(null, "Bạn có muốn thoát không", "Xác nhận đóng cửa sổ",
 						JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
-						new String[] { "dong y", "khong" }, JOptionPane.NO_OPTION);
+						new String[] { "Đồng ý", "Không!" }, JOptionPane.NO_OPTION);
 				if (result == JOptionPane.YES_OPTION) {
 					e.getWindow().dispose();
 				}
